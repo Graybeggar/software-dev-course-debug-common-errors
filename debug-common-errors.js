@@ -26,8 +26,8 @@ Think about which debugging methods you found most useful and how you might appl
 
 console.log("Welcome to the bootcamp
 
-// What’s Wrong?
-
+// What’s Wrong? syntax error. The string is missing a closing quotation mark. Fix: console.log("Welcome to the bootcamp");
+            
 
 // Program B
 // Description:
@@ -39,7 +39,7 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(doubled);
 }
 
-// What’s Wrong?
+// What’s Wrong? runtime error. 4 8 NaN. eight is not a valid number. let numbers = [2, 4, 8];
 
 
 
@@ -59,4 +59,9 @@ function isPrime(num) {
 
 console.log(isPrime(7)); // Expected true but gets false
 
-// What’s Wrong?
+// What’s Wrong? 
+        return false;  // If num is divisible by i, it's not a prime number
+      }
+    }
+    return true; // If no divisors were found, num is prime
+// Outcome: true
